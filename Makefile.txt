@@ -1,0 +1,8 @@
+lab2 :A.O lab2.O
+	g++ -o lab2 A.O lab2.O
+A.O:A.cpp a.h
+	g++ -c A.cpp
+lab2.O:lab2.cpp a.h
+	g++ -c lab2.cpp
+clean:
+	rm lab2 *,O
